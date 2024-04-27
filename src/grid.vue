@@ -1,21 +1,21 @@
 <template>
     <div class="grid">
         <div class="row1 row">
-            <div class="cell" style="background-color: #ff9999;"></div>
-            <div class="cell" style="background-color: #99ff99;"></div>
-            <div class="cell" style="background-color: #9999ff;"></div>
-            <div class="cell" style="background-color: #ffff99;"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
         </div>
         <div class="row2 row">
-            <div class="cell" style="background-color: #ff9999;"></div>
-            <div class="cell" style="background-color: #99ff99;"></div>
-            <div class="cell" style="background-color: #9999ff;"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
         </div>
         <div class="row3 row">
-            <div class="cell" style="background-color: #ff9999;"></div>
-            <div class="cell" style="background-color: #99ff99;"></div>
-            <div class="cell" style="background-color: #9999ff;"></div>
-            <div class="cell" style="background-color: #ffff99;"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
         </div>
     </div>
 </template>
@@ -59,13 +59,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #333;
 }
 
 @if $debug {
-
+    
     .cell {
         opacity: 0.5;
+        border: 1px solid #333;
     }
 
     .cell>* {

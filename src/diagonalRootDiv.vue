@@ -49,6 +49,8 @@ export default {
     background-image: url('/src/assets/flow1.gif');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: cadetblue ;
+    opacity: 0.8;
     background-size: 100% 60%;
     z-index: -2;
 }
@@ -60,18 +62,18 @@ export default {
     flex-direction: row;
     right: 25vw;
     top: 25vh;
-
+opacity: 0.8;
     #left {
         flex: 1;
         #backgroundLeft {
-            background-color: green;
+    background-image: url('/src/assets/pattern_for_link.png') ;
             margin-top: 50vh;
         }
     }
 
     #backgroundRight {
         flex: 1;
-        background-color: red;
+        background-image: url('/src/assets/pattern_for_link.png');
     }
 
 }

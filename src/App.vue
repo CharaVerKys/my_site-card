@@ -1,7 +1,5 @@
 <template>
 <grid></grid>
-
-
 <diagRD></diagRD>
 </template>
 
@@ -27,5 +25,7 @@ export default{
 
 body{
     overflow: hidden;
+    background-color: slategrey;
+    opacity: 0.7;
 }
 </style>
