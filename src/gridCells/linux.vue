@@ -18,9 +18,11 @@
     }
 
     img {
+        opacity: 0.95;
         width: 120%;
         height: auto;
-        margin-left: -10%;
+        max-height: 340px;
+        max-width: 280px;
     }
 }
 </style>

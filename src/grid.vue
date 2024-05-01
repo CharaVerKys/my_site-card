@@ -13,20 +13,23 @@
         </div>
         <div class="row3 row">
             <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell">car</div>
-            <div class="cell"></div>
+            <div class="cell"><cartag></cartag></div>
+            <div class="cell" style="align-items: normal;"><signs></signs></div>
         </div>
     </div>
 </template>
 
 <script>
 import linuxlogo from './gridCells/linux.vue';
+import cartag from './gridCells/car.vue';
+import signs from './gridCells/signs.vue';
 
 
 export default {
     components: {   
-        linuxlogo
+        linuxlogo,
+        cartag,
+        signs
     }
 }
 </script>
@@ -37,7 +40,7 @@ export default {
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 25% 50% 25%;
 }
 
 .row {
@@ -53,7 +56,7 @@ export default {
 }
 
 .row3 {
-    grid-template-columns: 1fr 3fr 4fr 2fr;
+    grid-template-columns: 13fr 6fr 7fr;
 }
 
 .cell {
