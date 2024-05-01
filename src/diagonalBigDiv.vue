@@ -1,14 +1,9 @@
 <template>
 
-    <div class="box box1" :style="{ transform: 'skewY(-' + angle + 'deg)' }">
+    <div class="box" :style="{ transform: 'skewY(-' + angle + 'deg)' }">
     </div>
-    <div class="box box2" :style="{ transform: 'skewY(' + angle + 'deg)' }">
-        <div id="left" :style="{ transform: 'skewY(-' + angle + 'deg)' }">
-            <div id="backgroundLeft" :style="{ transform: 'skewY(-' + angle + 'deg)' }"></div>
-        </div>
-        <div id="backgroundRight"></div>
-
-    </div>
+    
+    
 </template>
 
 <script>
@@ -36,45 +31,21 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .box {
     margin-top: 50vh;
     position: fixed;
     top: 0; // this is particular element, if erase it FIXED will break
     height: 200vw;
     width: 100vw;
-}
-
-.box1 {
     background-image: url('/src/assets/flow1.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: cadetblue ;
+    background-color: cadetblue;
     opacity: 0.8;
     background-size: 100% 60%;
     z-index: -2;
+    filter: blur(3px);
 }
 
-
-.box2 {
-    z-index: -1;
-    display: flex;
-    flex-direction: row;
-    right: 25vw;
-    top: 25vh;
-opacity: 0.8;
-    #left {
-        flex: 1;
-        #backgroundLeft {
-    background-image: url('/src/assets/pattern_for_link.png') ;
-            margin-top: 50vh;
-        }
-    }
-
-    #backgroundRight {
-        flex: 1;
-        background-image: url('/src/assets/pattern_for_link.png');
-    }
-
-}
 </style>

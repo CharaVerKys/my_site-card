@@ -35,6 +35,8 @@ export default {
 @import './variables';
 
 .grid {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
 }

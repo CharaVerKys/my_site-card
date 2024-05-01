@@ -1,16 +1,19 @@
 <template>
-<grid></grid>
-<diagRD></diagRD>
+    <diagND></diagND>
+    <grid></grid>
+    <diagBD></diagBD>
 </template>
 
 <script>
-import diagRD from './diagonalRootDiv';
+import diagBD from './diagonalBigDiv';
+import diagND from './diagonalNamedDiv';
 import grid from './grid';
 
 
 export default{
     components:{
-        diagRD,
+        diagND,
+        diagBD,
         grid
     }
 }
@@ -25,7 +28,8 @@ export default{
 
 body{
     overflow: hidden;
-    background-color: slategrey;
+    /* background-color: rgb(147, 96, 177); */
+    background: linear-gradient(to right,#6a9cff, #84049e);
     opacity: 0.7;
 }
 </style>
