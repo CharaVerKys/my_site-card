@@ -1,33 +1,32 @@
 <template>
     <div class="grid">
         <div class="row1 row">
+            <div class="cell">swcmdins links</div> 
             <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+            <div class="cell">dynemic</div>
+            <div class="cell">extra links</div>
         </div>
         <div class="row2 row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+            <div class="cell">leftCircle and neuro</div>
+            <div class="cell"><linuxlogo></linuxlogo></div>
+            <div class="cell">rightCircle</div>
         </div>
         <div class="row3 row">
             <div class="cell"></div>
             <div class="cell"></div>
-            <div class="cell"></div>
+            <div class="cell">car</div>
             <div class="cell"></div>
         </div>
     </div>
 </template>
 
 <script>
-import bigCircleL from '/src/bigCircleLeft.vue';
-import bigCircleR from '/src/bigCircleRight.vue';
+import linuxlogo from './gridCells/linux.vue';
+
 
 export default {
-    components: {
-        bigCircleL,
-        bigCircleR
+    components: {   
+        linuxlogo
     }
 }
 </script>
@@ -66,28 +65,23 @@ export default {
 @if $debug {
     
     .cell {
-        opacity: 0.5;
-        border: 1px solid #333;
-    }
-
-    .cell>* {
-        opacity: 1;
+        border: 1px solid #33333380;
     }
 
     .row .cell:nth-child(1) {
-        background-color: #ff9999;
+        background-color: #ff999980;
     }
 
     .row .cell:nth-child(2) {
-        background-color: #99ff99;
+        background-color: #99ff9980;
     }
 
     .row .cell:nth-child(3) {
-        background-color: #9999ff;
+        background-color: #9999ff80;
     }
 
     .row .cell:nth-child(4) {
-        background-color: #ffff99;
+        background-color: #ffff9980;
     }
 }
 </style>

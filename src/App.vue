@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import diagBD from './diagonalBigDiv';
-import diagND from './diagonalNamedDiv';
+import diagBD from './diag/diagonalBigDiv';
+import diagND from './diag/diagonalNamedDiv';
 import grid from './grid';
 
 

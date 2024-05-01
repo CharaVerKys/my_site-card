@@ -38,7 +38,7 @@ export default {
     top: 0; // this is particular element, if erase it FIXED will break
     height: 200vw;
     width: 100vw;
-    background-image: url('/src/assets/flow1.gif');
+    background-image: url('/assets/flow1.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: cadetblue;

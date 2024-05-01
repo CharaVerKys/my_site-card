@@ -97,7 +97,7 @@ export default {
         flex: 1;
 
         #backgroundLeft {
-            background-image: url('/src/assets/pattern_for_link.png');
+            background-image: url('/assets/pattern_for_link.png');
             margin-top: 50vh;
         }
     }
@@ -105,7 +105,7 @@ export default {
     #backgroundRight {
         filter: blur(2px);
         flex: 1;
-        background-image: url('/src/assets/pattern_for_link.png');
+        background-image: url('/assets/pattern_for_link.png');
     }
 
 }
