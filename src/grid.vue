@@ -1,10 +1,10 @@
 <template>
     <div class="grid">
         <div class="row1 row">
-            <div class="cell">swcmdins links</div> 
+            <div class="cell"><swcmdins></swcmdins></div> 
             <div class="cell"></div>
-            <div class="cell">dynemic</div>
-            <div class="cell">extra links</div>
+            <div class="cell"><dynam></dynam></div>
+            <div class="cell"></div>
         </div>
         <div class="row2 row">
             <div class="cell">leftCircle and neuro</div>
@@ -23,13 +23,17 @@
 import linuxlogo from './gridCells/linux.vue';
 import cartag from './gridCells/car.vue';
 import signs from './gridCells/signs.vue';
+import dynam from './gridCells/dynamData.vue';
+import swcmdins from './gridCells/swcmdins.vue';
 
 
 export default {
     components: {   
         linuxlogo,
         cartag,
-        signs
+        signs,
+        dynam,
+        swcmdins
     }
 }
 </script>
